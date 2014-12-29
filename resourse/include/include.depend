@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1419517854 source:/home/mrcoredy/文档/数据结构课程设计/resourse/main.cpp
+	<iostream>
+	"../head/EatPatch.h"
+	"../head/Cur_conver.h"
+
+1419473936 /home/mrcoredy/文档/数据结构课程设计/resourse/EatPatch.h
+	<iostream>
+	<stdlib.h>
+
+1419476834 /home/mrcoredy/文档/数据结构课程设计/head/EatPatch.h
+	<iostream>
+	<stdlib.h>
+
+1419518038 /home/mrcoredy/文档/数据结构课程设计/head/Cur_conver.h
+	<iostream>
+	<stack>
+
