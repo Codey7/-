@@ -12,12 +12,21 @@ int main ()
 
 
 //测试长整数运算
+              Op_longint o1;
               int a[2]={1204,1024};
               int b[2]={2048,2048};
-              Node a[2];
-              Node b[2];
-              
-
+              Node x[2];
+              Node y[2];
+             Node **h;
+              o1.init(h);
+               for(int i=0;i<2;i++)
+               {
+                     o1.insert_a(x[i],a[i]);
+               }
+               for(int i=0;i<2;i++)
+               {
+                    o1.operate(x[i],y[i]);
+               }
 
 	return 0;
 }

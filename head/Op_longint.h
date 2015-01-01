@@ -11,8 +11,8 @@ using namespace std;
 class Op_longint
 {
 public:
-   void init(Node **h);
-   void insert(Node*,int);
+   void init(Node** h);
+   void insert_a(Node*h,int x);
   void operate(Node *a,Node *b);
 };
 struct Node
@@ -22,25 +22,39 @@ struct Node
     Node *next;
 }
 //创建双向链表
-void Op_longint::init(Node **h)
+void Op_longint::init(Node** h)
 {
         *h=(Node* )malloc(sizeof(Node));
         (*h)->data=0;
         (*h)->pre=*h;
         (*h)->next=*h;
 }
-// Node *h =new Node [20];
-void insert(Node *h,int x) 
-{ 
-    	h->x++;  
-	Node *s; 
+void Op_longint::insert_a(Node* h,int x)
+{
+                h->x++;  
+                Node *s; 
             	s=(Node *)malloc(sizeof(Node));
-	s->data=x; 
+                s->data=x; 
+                s->pre=h->pre; 
+                h->pre->next=s;  
+                s->next=h;  
+                h->pre=s; 
+}
+// Node *h =new Node [20];
+/*
+
+void  Op_longint::insert_a(Node *h,int x) 
+{ 
+    	       h->x++;  
+                Node *s; 
+            	s=(Node *)malloc(sizeof(Node));
+                s->data=x; 
                 s->pre=h->pre; 
                 h->pre->next=s;  
                 s->next=h;  
                 h->pre=s; 
  }  
+ */
 
 //加法运算
 void Op_longint::operate(Node* a,Node* b)
