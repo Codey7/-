@@ -15,9 +15,10 @@ class EatPatch
 public:
 int y;
 	void menu();
-	int arrar();
-	int link();
-	void  recursion(int x);
+	void eat_main(EatPatch e);
+	int arrar();//数组数据结构求解
+	int link();//链数据结构求解
+	void  recursion(int x);//递归求解
 //	EatPatch();
 	//~EatPatch();
 private:
@@ -29,8 +30,8 @@ void EatPatch::menu()
         cout<<"****************************1.   数组数据结构*********************"<<endl;
         cout<<"****************************2.   链数据结构***********************"<<endl;
         cout<<"****************************3.   递归求解*************************"<<endl;
-
-	}
+        cout<<"****************************4.   退出！！*************************"<<endl;
+}
 int  EatPatch::arrar(){
               arr[9]=1;
               for(int i=8;i>=0;i--)
@@ -45,7 +46,7 @@ struct Node
 	int  data;
 	struct  Node *next;
 };
-           Node *l;
+     Node *l;
 	Node *p,*s;
 
 int EatPatch::link(){
@@ -63,7 +64,7 @@ int EatPatch::link(){
 		p=s;
 		s->next=NULL;
 	}
-return p->data;
+	return p->data;
 }
 int i=9;
 void EatPatch::recursion(int x)
@@ -74,10 +75,28 @@ void EatPatch::recursion(int x)
       i--;
       recursion(y);
       }
-
+      cout<<x<<endl;
 }
 
+void EatPatch::eat_main(EatPatch e)
+{
+	int n=0;
+	do
+	{
+		e.menu();
+		cout<<"请输入操作： ";
+        cin>>n;
+		switch (n){
+			case 1:cout<<e.arrar()<<endl;break;
+			case 2:cout<<e.link()<<endl;break;
+			case 3:recursion(1);break;
+            default : cout<<"输入有误！"<<endl;break;
+		}
+	}
+	while(n!=4);
+	return;
 
+}
 
 
 

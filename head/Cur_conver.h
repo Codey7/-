@@ -11,10 +11,11 @@ using namespace std;
 class  Conver
 {
 public:
-void  con_menu();
-	int ten_converstack();
-	int eve_converstack();
-	int arr_conver();
+    void  con_menu();
+	int ten_converstack();//十进制求值
+	int eve_converstack();//栈方法：任何进制求值
+	int arr_conver();//数组方法：任何进制求值；
+	void con_main(Conver c);
 private:
 	int x;
 };
@@ -22,9 +23,8 @@ void Conver::con_menu()
 {
             cout<< "--------------------------------------------------数制转换问题--------------------------------------- "<<endl;
         cout<<"****************************1.   十进制求值（栈）*********************"<<endl;
-        cout<<"****************************2.   任何进制求值（栈）***********************"<<endl;
-        cout<<"****************************3.   任何禁止求值（数组）*************************"<<endl;
-
+        cout<<"****************************2.   任何进制求值（栈）*******************"<<endl;
+        cout<<"****************************3.   任何禁止求值（数组）*****************"<<endl;
 }
 int Conver::ten_converstack()
 {
@@ -91,5 +91,19 @@ int Conver::arr_conver()
 	return 0;
 }
 
-
+void Conver::con_main(Conver c)
+{
+    char n;
+    cout<<"请输入操作： "<<endl;
+    do{
+            c.con_menu();
+            switch(n)
+            {
+                case '1':c.ten_converstack();break;
+                case '2':c.eve_converstack();break;
+                case '3':c.arr_conver();break;
+                default:cout<<"输入有误！"<<endl;break;
+            }
+    }while(n!='\0');
+}
 
