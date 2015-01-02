@@ -32,10 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="../../head/ Huffman.h" />
-		<Unit filename="../../head/ Navigation.h" />
 		<Unit filename="../../head/Cur_conver.h" />
 		<Unit filename="../../head/EatPatch.h" />
+		<Unit filename="../../head/Huffman.h" />
+		<Unit filename="../../head/Navigation.h" />
 		<Unit filename="../../head/Op_longint.h" />
 		<Unit filename="../../head/Student_manger.h" />
 		<Unit filename="../../head/Surper_maket.h" />

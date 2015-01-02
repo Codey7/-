@@ -2,7 +2,9 @@
 #include <iostream>
 #include "../head/EatPatch.h"
 #include "../head/Cur_conver.h"
- //   #include "../head/Op_longint.h"
+#include "../head/Op_longint.h"
+#include "../head/Student_manger.h"
+#include "../head/Huffman.h"
 using namespace std;
 void main_menu()
 {
@@ -24,33 +26,15 @@ do{
         switch(n)
         {
         case 1: EatPatch e;e.eat_main(e);break;
+        case 2:Conver c;c.con_main(c);break;
+        case 3:Op_longint o1;o1.op_main(o1);break;
+        case 4:{ Manger m;m.stu_main(m);break;}
+        case 5:  { Huffman h; h.h_main();
+        break;
+        }
         default :cout<<"输入有误！"<<endl;
         }
 
 }while(n!=10);
-
-/*	Conver c1;
-	c1.eve_converstack();
-	c1.arr_conver();*/
-
-
-//测试长整数运算
-        /*      Op_longint o1;
-              int a[2]={1204,1024};
-              int b[2]={2048,2048};
-              Node x[2];
-              Node y[2];
-             Node **h;
-              o1.init(h);
-               for(int i=0;i<2;i++)
-               {
-                     o1.insert_a(x[i],a[i]);
-               }
-               for(int i=0;i<2;i++)
-               {
-                    o1.operate(x[i],y[i]);
-               }
-               */
-
 	return 0;
 }

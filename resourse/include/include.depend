@@ -1,18 +1,38 @@
 # depslib dependency file v1.0
-1420115401 source:/home/mrcoredy/文档/数据结构课程设计/resourse/main.cpp
+1420210269 source:/home/mrcoredy/文档/数据结构课程设计/resourse/main.cpp
 	<iostream>
 	"../head/EatPatch.h"
 	"../head/Cur_conver.h"
+	"../head/Op_longint.h"
+	"../head/Student_manger.h"
+	"../head/Huffman.h"
 
 1419473936 /home/mrcoredy/文档/数据结构课程设计/resourse/EatPatch.h
 	<iostream>
 	<stdlib.h>
 
-1420115652 /home/mrcoredy/文档/数据结构课程设计/head/EatPatch.h
+1420117759 /home/mrcoredy/文档/数据结构课程设计/head/EatPatch.h
 	<iostream>
 	<stdlib.h>
 
-1420113824 /home/mrcoredy/文档/数据结构课程设计/head/Cur_conver.h
+1420116467 /home/mrcoredy/文档/数据结构课程设计/head/Cur_conver.h
 	<iostream>
 	<stack>
+
+1420121424 /home/mrcoredy/文档/数据结构课程设计/head/Op_longint.h
+	<iostream>
+	<stdlib.h>
+	<cstring>
+
+1420180840 /home/mrcoredy/文档/数据结构课程设计/head/Student_manger.h
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+
+1420210678 /home/mrcoredy/文档/数据结构课程设计/head/Huffman.h
+	<iostream>
+	<string>
+	<fstream>
+	"stdlib.h"
 
